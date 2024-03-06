@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <img src="assets/images/odin-lined.png" alt="Odin logo" />
+          <h1 class="title">Odin</h1>
+        </div>
+        <div class="photo-credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+
+      <div class="right">
+        <section class="hero">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up
+            <span class="italic">now</span> to get started.
+          </p>
+          <p>You <span class="italic">know</span> you want to.</p>
+        </section>
+
+        <section class="signup">
+          <form action="#" method="post">
+            <fieldset>
+              <div class="legend">Let's do this!</div>
+
+              <div class="form-container">
+                <div class="form-input">
+                  <label for="first-name">*First name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+
+                <div class="form-input">
+                  <label for="last-name">*Last name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+
+                <div class="form-input">
+                  <label for="email">*Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-input">
+                  <label for="phone-number">Phone number</label>
+                  <input type="tel" id="phone-number" name="phone-number" />
+                </div>
+
+                <div class="form-input">
+                  <label for="password">*Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8"
+                  />
+                </div>
+
+                <div class="form-input">
+                  <label for="password-confirm">*Confirm password</label>
+                  <input
+                    type="password"
+                    id="password-confirm"
+                    name="password-confirm"
+                    minlength="8"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div id="pwd-error" class="pwd-error-hidden">
+                * Passwords do not match
+              </div>
+            </fieldset>
+
+            <div class="form-signup">
+              <button type="submit" class="submit">Create Account</button>
+              <div class="login">
+                Already have an account? <a href="#">Log in</a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

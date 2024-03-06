@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('./assets/fonts/norse-bold.woff2') format('woff2');
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: min(1200px, 100%);
+  flex-wrap: wrap;
+}
+
+.left {
+  background: url('./assets/images/unsplash.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 16px 0;
+}
+
+.right {
+  flex: 2;
+  min-width: 400px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(100px, 10vw, 200px);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: clamp(10px, 10vh, 200px);
+}
+
+.logo > img {
+  height: 80%;
+  width: auto;
+}
+
+.logo > h1 {
+  font-family: 'Norse Bold', 'sans-serif';
+  font-size: 5rem;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+}
+
+.photo-credit {
+  font-size: 12px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+.right-container {
+  padding: 32px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 1.2rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.hero > p {
+  width: min(600px, 100%);
+  line-height: 1.2;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.signup {
+  flex: 2;
+}
+
+.signup fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  z-index: 1;
+}
+
+fieldset .legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  height: 28px;
+  flex: auto;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  border: 1px solid #2553d9;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  border: 1px solid #bd2625;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: min(600px, 100%);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  flex-basis: 200px;
+  gap: 2px;
+}
+
+.form-input > label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.submit {
+  background-color: #596d48;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 48px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #465639;
+}
+
+.login a {
+  color: #596d48;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+.hero,
+fieldset,
+.form-signup {
+  padding: 32px;
+}
+
+.pwd-error-visible {
+  display: block !important;
+  color: #bd2625;
+  font-size: 12px;
+}
+.pwd-error-hidden {
+  display: none;
+}
